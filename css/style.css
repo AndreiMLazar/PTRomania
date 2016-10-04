@@ -1081,6 +1081,6 @@ div.fog {
     background-image:url(../img/fog.png);
   background-size: cover;
   height: 100vh;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.1);
 }
 
