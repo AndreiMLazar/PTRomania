@@ -6,7 +6,7 @@
 <!--[if gt IE 8]>      <html class="no-js" lang="ro" >                       <![endif]-->
 <!--[if IE 9]>         <html class="lt-ie10" lang="ro" >                     <![endif]-->
 
-<html class="no-js" lang="ro" >
+<html class="js" lang="ro">
   <head>
 
     <meta charset="utf-8">
@@ -30,12 +30,10 @@
     
     <link rel="apple-touch-icon" href="img/favicon.png"/>
     <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-  	<link rel="stylesheet" href="http://www.getsimplegrid.com/libs/ver111/simplegrid.min.css">!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
@@ -49,7 +47,7 @@
 
   </head>
   
-  <body>
+  <body style="height: 100%;">
    <!-- Pre Loading Screen -->
    <div id="preloader">
         <div id="status" class="spinner">
@@ -68,14 +66,14 @@
 
 	<nav>
 		<ul class="cd-primary-nav">
-			<li class="cd-label">Informatii</li>
+			<li class="cd-label">Informatii</li><hr>
 
 			<li><a href="#Despre">Despre</a></li>
 			<li><a href="#Packs">Pachete</a></li>
             <li><a href="#Gallery">Galerie</a></li>
             <li><a href="#Contact">Contact</a></li>
 
-			<li class="cd-label">Urmareste-ne</li>
+			<li class="cd-label">Urmareste-ne</li><hr>
 			
 			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
 			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
@@ -178,28 +176,28 @@
       
       <!-- Packs Area -->
           
-          <div id="packs">
+          <div id="packs" style="height: 100vh;">
               <div class="parallax">
                 <div class="parallax__group">
                     <div class="parallax-layer parallax-back">
                     </div>
                     <div class="parallax-layer parallax-base">
-                      <h1>This is the foreground</h1>
-                      <div class="row">
-                          <div class="col-offset-1"></div>
-                          <div class="col-2 box">
+                        <span class="packs-text"><h1>Packs</h1></span>
+                        <div class="row">
+                            <div class="col-offset-1"></div>
+                            <div class="col-2 box">
 
-                          </div>
-                          <div class="col-offset-1"></div>
-                          <div class="col-3 box-big">
+                            </div>
+                            <div class="col-offset-1"></div>
+                            <div class="col-4 box-big">
 
-                          </div>
-                          <div class="col-offset-1"></div>
-                          <div class="col-2 box">
+                            </div>
+                            <div class="col-offset-1"></div>
+                            <div class="col-2 box">
 
-                          </div>
-                          <div class="col-offset-1"></div>
-                      </div>
+                            </div>
+                            <div class="col-offset-1"></div>
+                        </div>
                     </div>
                 </div>
               </div>
@@ -209,10 +207,11 @@
       <!-- Gallery Area --> 
       
           <div class="gallery">
-              <div class="gal">
+              <div class="gal" style="max-width: 100%;">
                 <div class="gal-title">
                     <h1>Gallery</h1>
                 </div>
+                <!--
                   <div class="gal-thumbs" data-google-image-layout data-max-height="230">
                       <img src="img/cd-background-img.jpg" data-full="img/cd-background-img.jpg" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/550/420?image=885" data-full="http://unsplash.it/1100/840?image=885" class="gal-thumbs-img" />
@@ -224,42 +223,43 @@
                       <img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/600/350?image=815" data-full="http://unsplash.it/1200/700?image=815" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823" class="gal-thumbs-img" />
-                    
+                    -->
                   </div>
 	              <div class="gal-fullscreen"></div>
             </div>
         </div>
-    
-          </div>
     <!-- Contact Area --> 
       
           <div id="contact">  
-                  <div class="contact-text"><p>Aceste programe nu inlocuiesc bla lbladla bla bla bla.</p>
-                    <a href="#">Bogcraciun@yahoo.com</a>
-                    <p>+40 0324 421 234</p>
-                      <div class="copyright"><p><strong>&copy; Personal Training Romania</p></strong></div>
-                  </div>
-          </div>
+              <div class="contact-text"><p style="padding: 4px;">Aceste programe nu inlocuiesc bla lbladla bla bla bla.</p>
+                  <address>
+                      <a href="mailto:support@ptromania.com" style="color:#6b6b6a;">Support@PTRomania.com</a>
+                      <p style="color:#6b6b6a;">+40 0324 421 234</p>
+                  </address>
+                <div class="copyright"><p><strong>&copy; 2016 Personal Training Romania</p></strong>
+                      </div>
+              </div>
         
-          <div class="social">
-              <ul class="footer">
-                  <li class="fb"><a href="#0"></a></li>
-                  <li class="in"><a href="#0"></a></li>
-                  <li class="tw"><a href="#0"></a></li>
-              </ul>
+              <div class="social">
+                  <ul class="footer">
+                      <li class="fb"><a href="#0"></a></li>
+                      <li class="in"><a href="#0"></a></li>
+                      <li class="tw"><a href="#0"></a></li>
+                  </ul>
+              </div>
           </div>
           
     <!-- End of Site / Scripts -->
   
-  
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/modernizr-custom.js"></script>
 	<script type="text/javascript">
 		$(".menu-collapsed").click(function() {
 			$(this).toggleClass("menu-expanded");
 				});
 	</script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-    <script src="js/menu.js"></script>
+    <script src="js/main.min.js"></script> <!-- Resource jQuery -->
+    <script src="js/menu.min.js"></script>
     <script src="js/arrow.js"></script>
     <script>
         var elem = document.querySelector('.gal');
@@ -269,8 +269,6 @@
         });
     </script>
     <script src='js/gallery.min.js'></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	<script type="text/javascript"> <!-- Preloader -->
             //<![CDATA[
                 $(window).on('load',function() { // makes sure the whole site is loaded
@@ -280,30 +278,15 @@
                 })
             //]]>
 	</script>
-    <script type="text/javascript">
-                $(function(){	
-
-                    var $window = $(window);
-                var scrollTime = 0.5;
-                var scrollDistance = 260;
-
-                $window.on("mousewheel DOMMouseScroll", function(event){
-
-                    event.preventDefault();	
-
-                    var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-                    var scrollTop = $window.scrollTop();
-                    var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-
-                    TweenMax.to($window, scrollTime, {
-                        scrollTo : { y: finalScroll, autoKill:true },
-                            ease: Power1.easeOut,
-                            overwrite: 5							
-                        });
-
-                });
-            });
+  <script type="text/javascript">
+      if(navigator.userAgent.match(/Trident\/7\./)) {
+      $('body').on("mousewheel", function () {
+          event.preventDefault();
+          var wd = event.wheelDelta;
+          var csp = window.pageYOffset;
+          window.scrollTo(0, csp - wd);
+      });
+      }   
     </script>
-    
 </body>
 </html>
