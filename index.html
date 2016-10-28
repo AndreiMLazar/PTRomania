@@ -9,12 +9,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!--<meta http-equiv="Cache-control: max-age=900" content="public"> 
-            Weird Cache ==> Google -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <meta name="description" content="Fitness Website / Personal Training" />
-  <meta name="author" content="Bogdan Craciun" />
-  <meta name="keywords" content="Bogdan Craciun Fitness" />
+  <meta name="description" content="Fitness Personal Training" />
+  <meta name="author" content="Personal Training Romania" />
+  <meta name="keywords" content="personal training romania, personal training, training, trainer, fitness, sport, athelette, gym" />
   <meta name="Resource-type" content="Document" />
   <meta name="robots" content="index,follow" />
   <meta property="og:image" content="img/favicon.png" />
@@ -28,6 +26,8 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/style.css" />
+      <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
+<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
@@ -46,7 +46,7 @@
   </script>
 </head>
 
-<body style="height: 100%;">
+<body>
   <!-- Pre Loading Screen -->
   <div id="preloader">
     <div id="status" class="spinner">
@@ -66,15 +66,13 @@
     <nav>
       <ul class="cd-primary-nav">
         <li class="cd-label">Informatii
-          <hr>
-        </li>
+          <hr> </li>
         <li><a href="#Despre">Despre</a></li>
         <li><a href="#Packs">Pachete</a></li>
         <li><a href="#Gallery">Galerie</a></li>
         <li><a href="#Contact">Contact</a></li>
         <li class="cd-label">Urmareste-ne
-          <hr>
-        </li>
+          <hr> </li>
         <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
         <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
         <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
@@ -103,87 +101,104 @@
       <!--<span class="hint">scroll</span>--></a>
   </div>
   <!-- Site -->
-  <div class="container-fluid">
-    <!-- About Area -->
-    <div id="despre">
-      <div class="row">
-        <div id="replace">
-          <div class="col-offset-1"></div>
-          <div class="col-11">
-            <div class="title">
-              <h1><!--[if gte IE 9]<style type="text/css">.gradient {filter: none;}</style><![endif]-->Despre</h1></div>
-          </div>
+  <!-- About Area -->
+  <div id="despre">
+    <div class="row">
+      <div id="replace">
+        <div class="col-offset-1"></div>
+        <div class="col-11">
+          <div class="title">
+            <h1><!--[if gte IE 9]<style type="text/css">.gradient {filter: none;}</style><![endif]-->Despre</h1></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-offset-1"></div>
-        <div class="col-5">
-          <div class="content">
-            <h2>
+    </div>
+    <div class="row">
+      <div class="col-offset-1"></div>
+      <div class="col-5">
+        <div class="content">
+          <h2>
                                  Cu o experienta de peste 5 ani in antrenamente si diete PERSONALIZATE si nenumarati clienti transformati fizic si psihic, echipa Personal Training Romania este aici pentru a pregati cat mai multe persoane sa isi atinga toate obiectivele in legatura cu aspectul lor corporal. 
                             </h2> </div>
-        </div>
-        <div class="col-6">
-          <div class="content">
-            <h2>
+      </div>
+      <div class="col-6">
+        <div class="content">
+          <h2>
                              Ceea ce ne dorim este ca tu sa nu ai nevoie vreodata sa cauti in alta parte informatii despre dieta si antrenament pentru ca vei avea success deplin cu ajutorul nostru!
                             </h2> </div>
-        </div>
-        <div class="dbexp"> <img src="img/dbexpf.png" alt="Bogdan Craciun Photo"> </div>
       </div>
-      <div class="row">
-        <div class="col-offset-1"></div>
-        <div class="col-5">
-          <div class="content hid">
-            <h2>
+      <div class="dbexp"> <img src="img/dbexpf.png" alt="Bogdan Craciun Photo"> </div>
+    </div>
+    <div class="row">
+      <div class="col-offset-1"></div>
+      <div class="col-5">
+        <div class="content hid">
+          <h2>
                                 Cartile FitNutrition si FitTraining sunt tot ceea ce ai nevoie daca te ai saturat sa te tot impotmolesti in mituri si informatii gresite de pe internet. Daca te ai hotarat ca este timpul sa ai un corp fit sis a inveti cum sa faci asta placut si simplu, aici este tot ceea ce ai nevoie.
                             </h2> </div>
-        </div>
-        <div class="col-6">
-          <div class="content hid">
-            <h2>
+      </div>
+      <div class="col-6">
+        <div class="content hid">
+          <h2>
                             Pentru cei ce vor un program de antrenament si dieta PERSONALIZATE in functie de unicitatea fiecaruia, varsta, sex, conditie fizica, greutatea actuala si greutatea la care vrea sa se ajunga, aici este pachetul de Antrenament si Dieta Personalizate.
                         </h2> </div>
-        </div>
       </div>
     </div>
-    <!-- Packs Area -->
-    <div id="packs" style="height: 100vh;">
-      <div class="parallax">
-        <div class="parallax__group">
-          <div class="parallax-layer parallax-back"> </div>
-          <div class="parallax-layer parallax-base"> <h1 class="packs-text">Packs</h1>
-            <div class="row">
-              <div class="list">
-                <div class="item silver">
-                  <div class="packs-title">
-                  <h1>Silver</h1></div>
-                  <h2>Lorem ipsumt odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h2>
-                  <span class="ripple b4">Silver</span></div>
-                <div class="item">
-                  <div class="silver">
-                  <div class="packs-title">
-                  <h1>Gold</h1></div>
-                  <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <br>consequatur? Quis autem vel eum iure reprehenderit qui in ea vol<br>uptate velit esse quam nihil molestiae consequatur, vel illum q<br>ui dolorem eum fugiat quo voluptas nulla pariatur</h2></div>
-                  <span class="ripple b4">Silver</span></div>
-                <div class="item silver">
-                  <div class="packs-title">
-                  <h1>Platinum</h1></div>
-                  <h2>Lorem ipsumt odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</h2>
-                  <span class="ripple b4">Silver</span></div>
-              </div>
+  </div>
+  <!-- Packs Area -->
+  <div id="packs">
+    <div class="parallax">
+      <div class="parallax__group">
+        <div class="parallax-layer parallax-back"> </div>
+        <div class="parallax-layer parallax-base">
+          <div class="list">
+            <div class="item">
+              <div class="packs-text">
+                <h1>Silver</h1></div>
+              <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <br>consequatur? Quis autem vel eum iure reprehenderit qui in ea vol<br>uptate velit esse quam nihil molestiae consequatur, vel illum q<br>ui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+              <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
+            </div>
+            <div class="item">
+              <div class="packs-text">
+                <h1>Gold</h1></div>
+              <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <br>consequatur? Quis autem vel eum iure reprehenderit qui in ea vol<br>uptate velit esse quam nihil molestiae consequatur, vel illum q<br>ui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+              <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
+            </div>
+            <div class="item">
+              <div class="packs-text">
+                <h1>Platinum</h1></div>
+              <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <br>consequatur? Quis autem vel eum iure reprehenderit qui in ea vol<br>uptate velit esse quam nihil molestiae consequatur, vel illum q<br>ui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+              <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
             </div>
           </div>
+          <div class="testimonials">
+          <section role="complementary" class="simple quotes container">
+            <blockquote class="quote-card gold-card">
+              <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
+                          <blockquote class="quote-card gold-card">
+              <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
+                          <blockquote class="quote-card gold-card">
+              <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
+          </section>
+        </div>
         </div>
       </div>
     </div>
-    <!-- Gallery Area -->
-    <div class="gallery">
-      <div class="gal" style="max-width: 100%;">
-        <div class="gal-title">
-          <h1>Gallery</h1> </div>
-        <!--
-                  <div class="gal-thumbs" data-google-image-layout data-max-height="230">
+    <div class="bot-design">
+      <!--[if gte IE 9]
+<style type="text/css">
+.gradient {
+filter: none;
+}
+</style>
+<![endif]-->
+    </div>
+  </div>
+  <!-- Gallery Area -->
+  <div class="gallery">
+    <div class="gal" style="max-width: 100%;">
+      <div class="gal-title">
+        <h1>Gallery</h1> </div>
+      <!--<div class="gal-thumbs" data-google-image-layout data-max-height="230">
                       <img src="img/cd-background-img.jpg" data-full="img/cd-background-img.jpg" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/550/420?image=885" data-full="http://unsplash.it/1100/840?image=885" class="gal-thumbs-img" />
                       <img src="https://unsplash.it/200/300/?random" data-full="https://unsplash.it/200/300/?random" class="gal-thumbs-img" />
@@ -193,10 +208,9 @@
                       <img src="http://unsplash.it/550/420?image=885" data-full="http://unsplash.it/1100/840?image=885" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823" class="gal-thumbs-img" />
                       <img src="http://unsplash.it/600/350?image=815" data-full="http://unsplash.it/1200/700?image=815" class="gal-thumbs-img" />
-                      <img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823" class="gal-thumbs-img" />
-                    --></div>
-      <div class="gal-fullscreen"></div>
-    </div>
+                      <img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823" class="gal-thumbs-img" />--></div>
+    <div class="gal-fullscreen"></div>
+  </div>
   </div>
   <!-- Contact Area -->
   <div id="contact">
@@ -264,33 +278,32 @@
       });
     }
   </script>
-  <script type="text/javascript">$(document).on('click', '.ripple', function(e) {
-  var $rippleElement = $('<span class="ripple-effect" />'),
-    $buttonElement = $(this),
-    btnOffset = $buttonElement.offset(),
-    xPos = e.pageX - btnOffset.left,
-    yPos = e.pageY - btnOffset.top,
-    size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5),
-    animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
-
-  $rippleElement
-    .css({
-      top: yPos,
-      left: xPos,
-      width: size,
-      height: size,
-
-      backgroundColor: $buttonElement.data("ripple-color")
-    })
-    .appendTo($buttonElement)
-    .animate({
-      width: animateSize,
-      height: animateSize,
-      opacity: 0
-    }, 700, function() {
-      $(this).remove();
+  <script type="text/javascript">
+    $(document).on('click', '.ripple', function (e) {
+      var $rippleElement = $('<span class="ripple-effect" />')
+        , $buttonElement = $(this)
+        , btnOffset = $buttonElement.offset()
+        , xPos = e.pageX - btnOffset.left
+        , yPos = e.pageY - btnOffset.top
+        , size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5)
+        , animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
+      $rippleElement.css({
+        top: yPos
+        , left: xPos
+        , width: size
+        , height: size
+        , backgroundColor: $buttonElement.data("ripple-color")
+      }).appendTo($buttonElement).animate({
+        width: animateSize
+        , height: animateSize
+        , opacity: 0
+      }, 700, function () {
+        $(this).remove();
+      });
     });
-});</script>
+  </script>
+  <script src='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
+  <script src="js/testimonials.js"></script>
 </body>
 
 </html>
