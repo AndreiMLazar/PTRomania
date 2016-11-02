@@ -13,6 +13,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -104,6 +105,7 @@ hr {
 
 .cd-header {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   top: 0;
   left: 0;
   background: rgba(37, 37, 37, 1);
@@ -143,6 +145,8 @@ hr {
   .cd-header.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
+    -webkit-transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
     top: -80px;
     background-color: rgba(37, 37, 37, 0.9);
     -webkit-transition: -webkit-transform 0.3s;
@@ -169,6 +173,7 @@ hr {
 .cd-logo {
   display: block;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -196,6 +201,7 @@ hr {
 
 .cd-secondary-nav {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -228,6 +234,7 @@ hr {
 
 .cd-primary-nav-trigger {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   right: 0;
   top: 0;
   height: 100%;
@@ -254,6 +261,7 @@ hr {
   /* this span is the central line of the menu icon */
   display: inline-block;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   left: 50%;
   top: 50%;
   bottom: auto;
@@ -278,6 +286,7 @@ hr {
   width: 100%;
   height: 100%;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   background-color: #d9b05f;
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
@@ -353,6 +362,7 @@ hr {
 .cd-primary-nav {
   /* by default it's hidden - on top of the viewport */
   position: fixed;
+  -webkit-transform: translateZ(0);
   left: 0;
   top: 0;
   height: 100%;
@@ -493,6 +503,7 @@ hr {
 
 .cd-intro {
   position: relative;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   z-index: 2;
   -webkit-font-smoothing: antialiased;
@@ -535,6 +546,7 @@ hr {
 
 .cd-main-content {
   position: relative;
+  -webkit-overflow-scrolling: touch;
   z-index: 2;
 }
 
@@ -567,6 +579,7 @@ hr {
 
 .slide_group {
   position: relative;
+  -webkit-overflow-scrolling: touch;
   max-width: 100%;
   height: auto;
 }
@@ -581,6 +594,7 @@ hr {
   display: none;
   height: 100%;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
 }
 
@@ -633,6 +647,7 @@ hr {
 .slide_buttons {
   left: 0;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   right: 0;
   text-align: center;
 }
@@ -642,6 +657,7 @@ a.slide_btn {
   color: #d9b05f;
   font-size: 24px;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   bottom: 3vh;
   margin: 0 0.4em;
   -webkit-transition: all 0.4s ease-in-out;
@@ -662,12 +678,14 @@ a.slide_btn {
   margin: 0 auto;
   max-width: 100%;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   top: -50%;
 }
 
 .previous_btn {
   margin: auto;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   bottom: auto;
   top: 0;
   left: -46%;
@@ -676,6 +694,7 @@ a.slide_btn {
 .next_btn {
   margin: auto;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   bottom: auto;
   top: -40px;
   right: -46%;
@@ -713,6 +732,7 @@ a.slide_btn {
   .slide_buttons {
     left: 0;
     position: relative;
+    -webkit-overflow-scrolling: touch;
     right: 0;
     text-align: center;
     height: calc(100% - 40px);
@@ -726,9 +746,10 @@ a.slide_btn {
 
 #despre {
   min-height: 100vh;
-  max-height: 155vh;
+  max-height: 100%;
   color: #f6db93;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   background: url(../img/pattern.svg);
   opacity: 1;
   background-size: cover;
@@ -752,6 +773,7 @@ a.slide_btn {
 
 .dbexp img {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   max-width: 21%;
   right: 0;
   bottom: 0;
@@ -839,6 +861,7 @@ a.slide_btn {
   }
   .arrow-wrap {
     position: relative;
+    -webkit-overflow-scrolling: touch;
     z-index: 2;
     left: 46%;
     top: 50px;
@@ -853,6 +876,7 @@ a.slide_btn {
   .arrow {
     float: left;
     position: relative;
+    -webkit-overflow-scrolling: touch;
     width: 0px;
     height: 0px;
     border-style: solid;
@@ -864,6 +888,7 @@ a.slide_btn {
   .arrow:after {
     content: '';
     position: absolute;
+    -webkit-overflow-scrolling: touch;
     top: -27px;
     left: -23.5px;
     width: 0px;
@@ -931,6 +956,7 @@ a.slide_btn {
   box-shadow: inset 0px 0px 15px -10px rgba(0, 0, 0, 1);
   background-image: url(../img/nature2ff.jpg);
   background-attachment: fixed;
+  -webkit-transform: translateZ(0);
   background-size: cover;
   height: 100%;
   overflow-x: hidden;
@@ -946,6 +972,7 @@ a.slide_btn {
 
 .parallax-layer {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   top: 0;
   right: 0;
   bottom: 0;
@@ -970,6 +997,7 @@ a.slide_btn {
 
 .parallax__group {
   position: relative;
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
   transform-style: preserve-3d;
 }
@@ -1008,6 +1036,7 @@ a.slide_btn {
   height: 91vh;
   color: #f6db93;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   background: url(../img/pattern.svg);
   opacity: 1;
   background-size: cover;
@@ -1031,11 +1060,11 @@ a.slide_btn {
   margin-top: 0vh;
   padding-top: 0;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   background-color: #A3A3A1;
   -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.6);
   box-shadow: 0px -4px 10px -2px rgba(0, 0, 0, 0.6);
-  position: relative;
   background: url(../img/pattern1.svg);
   opacity: 1;
   background-size: cover;
@@ -1064,6 +1093,7 @@ a.slide_btn {
 .social {
   height: 44px;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   background-color: #252525;
   background: url(../img/pattern.svg);
   background-size: cover;
@@ -1076,6 +1106,7 @@ a.slide_btn {
 ul.footer {
   list-style-type: none;
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   left: calc(50% - 66px);
   -ms-left: calc(50% - 132px);
   -webkit-left: calc(50% - 132px);
@@ -1155,8 +1186,7 @@ ul.footer li.tw a {
   opacity: 0.95;
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px;
-  border: 2px solid #A3a3a1;
+  -webkit-border-radius: 20px;
   color: #f7f7f7;
   padding: 10px;
   margin-left: 14%;
@@ -1242,14 +1272,12 @@ ul.footer li.tw a {
   font-family: montserrat;
   font-size: 16px;
   line-height: 24px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .ripple {
   overflow: hidden;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
   transform: translate3d(0, 0, 0);
   width: 40%;
@@ -1259,6 +1287,7 @@ ul.footer li.tw a {
 
 .ripple-effect {
   position: absolute;
+  -webkit-overflow-scrolling: touch;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.9);
   user-select: none;
@@ -1305,6 +1334,7 @@ ul.footer li.tw a {
   transition: 110ms ease-in-out;
   max-height: 10vh;
   position: relative;
+  -webkit-overflow-scrolling: touch;
   bottom: 0;
   margin-top: -11.45vh;
   padding-top: 10vh;
@@ -1314,6 +1344,7 @@ ul.footer li.tw a {
   height: 6vh;
   width: 50%;
   position: relative;
+  -webkit-overflow-scrolling: touch;
 }
 
 .lft {
@@ -1421,6 +1452,8 @@ ul.footer li.tw a {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  -webkit-transform: translateZ(0);
+  -webkit-overflow-scrolling: touch;
   left: 0;
   display: none;
   text-align: center;
@@ -1428,9 +1461,10 @@ ul.footer li.tw a {
 
 #overlay img {
   position: relative;
+  -webkit-overflow-scrolling: touch;
   top: 10%;
   width: 70vw;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 #photos {
@@ -1451,9 +1485,10 @@ ul.footer li.tw a {
     height: 145vh;
   }
   #overlay img {
-    top: 50%;
+    top: 36%;
     width: 90vw;
-    margin-right: 20px;
+    margin-left: 0%;
+    margin-right: 5%;
   }
 }
 
@@ -1489,3 +1524,9 @@ ul.footer li.tw a {
     height: 110vh;
   }
 }
+
+@media screen and (max-width: 410px) {
+.hid {
+  display: none;
+}
+  }
