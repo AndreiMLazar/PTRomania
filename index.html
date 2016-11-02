@@ -26,8 +26,6 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
-  <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
@@ -71,6 +69,7 @@
         <li><a href="#Packs">Pachete</a></li>
         <li><a href="#Gallery">Galerie</a></li>
         <li><a href="#Contact">Contact</a></li>
+        <li id="blog"><a href="#Blog">Blog</a></li>
         <li class="cd-label">Urmareste-ne
           <hr> </li>
         <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
@@ -164,16 +163,6 @@
               <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
             </div>
           </div>
-          <div class="testimonials">
-            <section role="complementary" class="simple quotes container">
-              <blockquote class="quote-card gold-card">
-                <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
-              <blockquote class="quote-card gold-card">
-                <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
-              <blockquote class="quote-card gold-card">
-                <p> Nothing is more precious than peace. Peace is the most basic starting point for the advancement of humankind. </p> <cite>Daisaku Ikeda</cite> </blockquote>
-            </section>
-          </div>
         </div>
       </div>
     </div>
@@ -189,20 +178,34 @@ filter: none;
   </div>
   <!-- Gallery Area -->
   <div class="gallery">
-    <div class="gal" style="max-width: 100%;">
+    <div class="gal">
       <div class="gal-title">
         <h1>Gallery</h1> </div>
-      <div class="gal-thumbs thumbs-wrapper" data-google-image-layout data-max-height="220">
-        <div class="gal-flex">
-          <div><img src="gal/g2th.jpg" data-full="gal/g2.jpg" class="gal-thumbs-img"></div>
-          <div><img src="gal/g3th.jpg" data-full="gal/g3.jpg" class="gal-thumbs-img"></div>
-          <div><img src="gal/g4th.jpg" data-full="gal/g4.jpg" class="gal-thumbs-img"></div>
-          <div><img src="gal/g6th.jpg" data-full="gal/g6.jpg" class="gal-thumbs-img"></div>
-          <div><img src="gal/g7th.jpg" data-full="gal/g7.jpg" class="gal-thumbs-img"></div>
-          <div><img src="gal/g8th.jpg" data-full="gal/g8.jpg" class="gal-thumbs-img"></div>
-        </div>
-      </div>
-      <div class="gal-fullscreen"></div>
+    </div>
+    <div id="photos">
+      <ul id="photo-gallery">
+        <li>
+          <a href="gal/g2.JPG"> <img src="gal/g2.JPG"> </a>
+        </li>
+         <li>
+          <a href="gal/g3.jpg"> <img src="gal/g3.jpg"> </a>
+        </li>
+         <li>
+          <a href="gal/g4.jpg"> <img src="gal/g4.jpg"> </a>
+        </li>
+         <li>
+          <a href="gal/g6res.jpg"> <img src="gal/g6res.jpg"> </a>
+        </li>
+         <li>
+          <a href="gal/g7.jpg"> <img src="gal/g7.JPG"> </a>
+        </li>
+         <li>
+          <a href="gal/g8.jpg"> <img src="gal/g8.jpg"> </a>
+        </li>
+         <li>
+        
+ 
+      </ul>
     </div>
   </div>
   <!-- Contact Area -->
@@ -246,7 +249,26 @@ filter: none;
       var gallery = new MaterialPhotoGallery(elem);
     });
   </script>
-  <script src='js/gallery.min.js'></script>
+  <script type="text/javascript">
+    var $overlay = $('<div id="overlay"></div>');
+    var $image = $("<img>");
+    //An image to overlay
+    $overlay.append($image);
+    //Add overlay
+    $("body").append($overlay);
+    //click the image and a scaled version of the full size image will appear
+    $("#photo-gallery a").click(function (event) {
+      event.preventDefault();
+      var imageLocation = $(this).attr("href");
+      //update overlay with the image linked in the link
+      $image.attr("src", imageLocation);
+      //show the overlay
+      $overlay.show();
+    });
+    $("#overlay").click(function () {
+      $("#overlay").hide();
+    });
+  </script>
   <script type="text/javascript">
     <!-- Preloader -->
     //<![CDATA[
