@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Moon-Bold';
+  src: url('Moon-Bold.eot');
+  src: url('Moon-Bold.woff2') format('woff2'),
+       url('Moon-Bold.woff') format('woff'),
+       url('Moon-Bold.ttf') format('truetype'),
+       url('Moon-Bold.svg#Moon-Bold') format('svg'),
+       url('Moon-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

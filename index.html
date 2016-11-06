@@ -153,13 +153,13 @@
             <div class="item">
               <div class="packs-text">
                 <h1>Silver</h1></div>
-              <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi </h2>
+              <h2>Lorem ipsumt <br>mpora incidunt <br>ut labore et<br> dolore magnam <br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br></h2>
               <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
             </div>
             <div class="item">
               <div class="packs-text">
                 <h1>Gold</h1></div>
-              <h2>Lorem ipsumt odit aut fugi<br>mpora incidunt ut labore et dolore magnam aliquam quaerat volu<br>ptatem. Ut enim ad minima veniam, quis nostrum exercitationem ul<br>lam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi <br>consequatur? Quis autem vel eum iure reprehenderit qui in ea vol<br>uptate velit esse quam nihil molestiae consequatur, vel illum q<br>ui dolorem eum fugiat quo voluptas nulla pariatur</h2>
+              <h2>Lorem ipsumt <br>mpora incidunt <br>ut labore et<br> dolore magnam <br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br></h2>
               <div class="item2"> <span class="ripple lft cta-button">Aflati mai multe</span> <span class="ripple rght cta-button">Adaugati in cos</span> </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ filter: none;
     <div id="photos">
       <ul id="photo-gallery">
         <li>
-          <a href="gal/g2.JPG"> <img src="gal/g2.JPG"> </a>
+          <a href="gal/g2.jpg"> <img src="gal/g2.jpg"> </a>
         </li>
         
         <li>
@@ -198,7 +198,7 @@ filter: none;
           <a href="gal/g6res.jpg"> <img src="gal/g6res.jpg"> </a>
         </li>
         <li>
-          <a href="gal/g7.jpg"> <img src="gal/g7.JPG"> </a>
+          <a href="gal/g7.jpg"> <img src="gal/g7.jpg"> </a>
         </li>
         <li>
           <a href="gal/g8.jpg"> <img src="gal/g8.jpg"> </a>
@@ -232,8 +232,10 @@ filter: none;
     </div>
   </div>
   <!-- End of Site / Scripts -->
-  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="js/modernizr-custom.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(".menu-collapsed").click(function () {
       $(this).toggleClass("menu-expanded");
@@ -292,31 +294,34 @@ filter: none;
     }
   </script>
   <script type="text/javascript">
-    $(document).on('click', '.ripple', function (e) {
-      var $rippleElement = $('<span class="ripple-effect" />')
-        , $buttonElement = $(this)
-        , btnOffset = $buttonElement.offset()
-        , xPos = e.pageX - btnOffset.left
-        , yPos = e.pageY - btnOffset.top
-        , size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5)
-        , animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
-      $rippleElement.css({
-        top: yPos
-        , left: xPos
-        , width: size
-        , height: size
-        , backgroundColor: $buttonElement.data("ripple-color")
-      }).appendTo($buttonElement).animate({
-        width: animateSize
-        , height: animateSize
-        , opacity: 0
-      }, 700, function () {
-        $(this).remove();
-      });
+$(document).on('click', '.ripple', function(e) {
+  var $rippleElement = $('<span class="ripple-effect" />'),
+    $buttonElement = $(this),
+    btnOffset = $buttonElement.offset(),
+    xPos = e.pageX - btnOffset.left,
+    yPos = e.pageY - btnOffset.top,
+    size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5),
+    animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
+
+  $rippleElement
+    .css({
+      top: yPos,
+      left: xPos,
+      width: size,
+      height: size,
+
+      backgroundColor: $buttonElement.data("ripple-color")
+    })
+    .appendTo($buttonElement)
+    .animate({
+      width: animateSize,
+      height: animateSize,
+      opacity: 0
+    }, 700, function() {
+      $(this).remove();
     });
+});
   </script>
-  <script src='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
-  <script src="js/testimonials.js"></script>
 </body>
 
 </html>
