@@ -1,6 +1,6 @@
 body {
   font-size: 100%;
-  font-family: Moon, Antipasto, Ailerons, Montserrat, GillSans, Calibri, Trebuchet, sans-serif;
+  font-family: Moon-Light, Antipasto, Ailerons-Regular, Montserrat-Black, GillSans, Calibri, Trebuchet, sans-serif;
   color: rgba(37, 37, 37, 0.7);
   background-color: #111;
 }
@@ -18,7 +18,7 @@ body {
 
 h1 {
   font-size: 72px;
-  font-family: Moon, sans-serif, helvetica neue;
+  font-family: Moon-Light, sans-serif, helvetica neue;
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 0px;
@@ -249,7 +249,7 @@ hr {
 }
 
 .cd-primary-nav-trigger .cd-menu-text {
-  font-family: Moon;
+  font-family: Moon-Light;
   color: #A3A3A1;
   text-transform: uppercase;
   font-weight: 500;
@@ -403,7 +403,7 @@ hr {
 }
 
 .cd-primary-nav a {
-  font-family: Ailerons;
+  font-family: Ailerons-Regular;
   display: inline-block;
   padding: .3em 0em;
   border-radius: 0.2em;
@@ -1098,7 +1098,7 @@ a.slide_btn {
 }
 
 .copyright {
-  font-family: moon;
+  font-family: Moon-Light;
   padding-top: 0.8vh;
   font-weight: 300;
 }
@@ -1240,6 +1240,9 @@ ul.footer li.tw a {
   .list .item {
     margin-left: 1.7%;
   }
+  .bot-design {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -1255,6 +1258,7 @@ ul.footer li.tw a {
 @media screen and (max-width: 500px) {
   .list {
     width: 100%;
+    margin-top: 0;
   }
   .list .item {
     margin-left: 5%;
@@ -1284,9 +1288,9 @@ ul.footer li.tw a {
 
 .item h2 {
   color: #f7f7f7;
-  font-family: montserrat;
+  font-family: Montserrat;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .ripple {
@@ -1309,7 +1313,7 @@ ul.footer li.tw a {
   pointer-events: none;
   padding: 0;
   margin: 0;
-  opacity: 0.7;
+  opacity: 0.6;
   transform: translate3d(-50%, -50%, 0);
 }
 
@@ -1319,7 +1323,7 @@ ul.footer li.tw a {
   color: #eee;
   cursor: pointer;
   letter-spacing: 0.7px;
-  transition: box-shadow .3s;
+  transition: box-shadow .1s;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -1337,7 +1341,6 @@ ul.footer li.tw a {
   background: -o-linear-gradient(top, rgba(241, 231, 103, 0) 0%, rgba(191, 150, 73, 0.95) 100%);
   background: -ms-linear-gradient(top, rgba(241, 231, 103, 0) 0%, rgba(191, 150, 73, 0.95) 100%);
   background: linear-gradient(to bottom, rgba(241, 231, 103, 0) 0%, rgba(191, 150, 73, 0.95) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#bf9649', GradientType=0);
   width: 100%;
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
@@ -1349,26 +1352,14 @@ ul.footer li.tw a {
   bottom: 0;
   margin-top: -11.45vh;
   padding-top: 10vh;
+  z-index: 0;
 }
 
 .cta-button {
-  height: 6vh;
   width: 50%;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-}
-
-.item2 span {
-      -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  filter: brightness(1);
 }
 
 .lft:hover, .rght:hover {
-  
   transition-timing-function: ease;
     -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1387,21 +1378,21 @@ ul.footer li.tw a {
   background-color: #d9b05f;
 }
 
-.cta-button @media (min-width: 410px) {
+@media screen and (min-width: 410px) {
   .list .item {
     max-width: calc(96.6% - 10px);
     height: 23vh;
   }
 }
 
-@media (min-width: 620px) {
+@media screen and (min-width: 620px) {
   .list .item {
     max-width: calc(46.6% - 10px);
     height: 40vh;
   }
 }
 
-@media (min-width: 830px) {
+@media screen and (min-width: 830px) {
   .list .item {
     max-width: calc(30% - 10px);
     height: 60vh;
@@ -1411,7 +1402,7 @@ ul.footer li.tw a {
   }
 }
 
-@media (min-width: 1040px) {
+@media screen and (min-width: 1040px) {
   .list .item {
     max-width: calc(30% - 10px);
     height: 60vh;
@@ -1421,7 +1412,7 @@ ul.footer li.tw a {
   }
 }
 
-@media (min-width: 1250px) {
+@media screen and (min-width: 1250px) {
   .list .item {
     max-width: calc(30% - 10px);
     height: 60vh;
@@ -1431,18 +1422,14 @@ ul.footer li.tw a {
   }
 }
 
-@media (min-width: 1460px) {
+@media screen and (min-width: 1460px) {
   .list .item {
     max-width: calc(30% - 10px);
     height: 60vh;
   }
-  .cta-button {
-    margin-top: 280px;
-    height: 7vh;
-  }
 }
 
-@media (min-width: 1670px) {
+@media screen and (min-width: 1670px) {
   .list .item {
     min-width: calc(30% - 10px);
     height: 60vh;
