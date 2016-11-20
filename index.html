@@ -21,11 +21,11 @@
   <title>Bogdan Craciun Fitness</title>
   <link rel="apple-touch-icon" href="img/favicon.png" />
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link rel="stylesheet" href="css/preloader.css" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/style.css" />
+  
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
@@ -42,10 +42,11 @@
     ga('create', 'Personal Training Romania', 'auto');
     ga('send', 'pageview');
   </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
- <noscript>Va rugam folositi alt browser! (Ex: Google Chrome, Mozilla Firefox, Microsoft Edge)</noscript>
+  <noscript>Va rugam folositi alt browser! (Ex: Google Chrome, Mozilla Firefox, Microsoft Edge)</noscript>
   <!-- Pre Loading Screen -->
   <div id="preloader">
     <div id="status" class="spinner">
@@ -94,6 +95,24 @@
   <div class="directional_nav">
     <div class="previous_btn" title="Previous"> <img src="img/left.png" alt="Next photo"> </div>
     <div class="next_btn" title="Next"> <img src="img/right.png" alt="Next photo"> </div>
+  </div>
+  <div id="opt-in">
+    <div id="hide"></div>
+    <div class="form-main card fade-in"> <span class="close fat"></span>
+      <h2 class="fade-in"><span class="color-accent">Cartea Nutritie + Antrenament Gratis </span><br>Primele 20 de pagini ti le trimitem pe mail </h2>
+      <br>
+      <br>
+      <form action="">
+        <div class="form-flex fade-in">
+          <label class="fade-in"> <span>Mail</span>
+            <input type="email" name="email">
+            <div class="underline"></div>
+          </label>
+        </div>
+      </form>
+      <br>
+      <div class="form-flex"> <span class="ripple rght cta-button fade-in" style="width:100%; text-align:center; font-size: 24px;">Trimite</span> </div>
+    </div>
   </div>
   <!-- Scroll Down Mobile -->
   <div class="main">
@@ -152,12 +171,14 @@
         <div class="parallax-layer parallax-base">
           <div class="list">
             <div class="item">
-                <h1>Nutritie + Antrenament</h1><hr>
+              <h1>Nutritie + Antrenament</h1>
+              <hr>
               <h2>Lorem ipsumt <br>mpora incidunt <br>ut labore et<br> dolore magnam <br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br></h2>
               <div class="item2"> <span class="ripple lft cta-button">Detalii</span> <span class="ripple rght cta-button">Cumparati</span> </div>
             </div>
             <div class="item">
-                <h1>Online personal Training</h1><hr>
+              <h1>Online personal Training</h1>
+              <hr>
               <h2>Lorem ipsumt <br>mpora incidunt <br>ut labore et<br> dolore magnam <br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br>aliquam quaerat volu<br>ptatem. Ut enim ad <br>minima veniam, quis nostrum<br></h2>
               <div class="item2"> <span class="ripple lft cta-button">Detalii</span> <span class="ripple rght cta-button">Cumparati</span> </div>
             </div>
@@ -176,17 +197,15 @@ filter: none;
     </div>
   </div>
   <!-- Gallery Area -->
-  <div class="gallery">
+  <div id="gallery">
     <div class="gal">
       <div class="gal-title">
         <h1>Gallery</h1> </div>
-    </div>
     <div id="photos">
       <ul id="photo-gallery">
         <li>
           <a href="gal/g2.jpg"> <img src="gal/g2.jpg"> </a>
         </li>
-        
         <li>
           <a href="gal/g3.jpg"> <img src="gal/g3.jpg"> </a>
         </li>
@@ -202,10 +221,10 @@ filter: none;
         <li>
           <a href="gal/g8.jpg"> <img src="gal/g8.jpg"> </a>
         </li>
-        
         <li>
       </ul>
     </div>
+  </div>
   </div>
   <!-- Contact Area -->
   <div id="contact">
@@ -231,25 +250,26 @@ filter: none;
     </div>
   </div>
   <!-- End of Site / Scripts -->
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    <!-- Preloader -->
+    //<![CDATA[
+    $(window).on('load', function () { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({
+          'overflow': 'visible'
+        });
+      })
+      //]]>
+  </script>
   <script type="text/javascript">
     $(".menu-collapsed").click(function () {
       $(this).toggleClass("menu-expanded");
     });
   </script>
   <script src="js/main.min.js"></script>
-  <!-- Resource jQuery -->
   <script src="js/menu.min.js"></script>
   <script src="js/arrow.js"></script>
-  <script>
-    var elem = document.querySelector('.gal');
-    document.addEventListener('DOMContentLoaded', function () {
-      var gallery = new MaterialPhotoGallery(elem);
-    });
-  </script>
   <script type="text/javascript">
     var $overlay = $('<div id="overlay"></div>');
     var $image = $("<img>");
@@ -271,16 +291,14 @@ filter: none;
     });
   </script>
   <script type="text/javascript">
-    <!-- Preloader -->
-    //<![CDATA[
-    $(window).on('load', function () { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-          'overflow': 'visible'
-        });
-      })
-      //]]>
+    $(document).ready(function() {
+    setTimeout(function() {
+      $('#opt-in').fadeIn(200);
+    }, 10000); // milliseconds
+      $('.close').click(function () {
+        document.getElementById('opt-in').style.display = 'none';
+      });
+});
   </script>
   <script type="text/javascript">
     if (navigator.userAgent.match(/Trident\/7\./)) {
@@ -293,33 +311,28 @@ filter: none;
     }
   </script>
   <script type="text/javascript">
-$(document).on('click', '.ripple', function(e) {
-  var $rippleElement = $('<span class="ripple-effect" />'),
-    $buttonElement = $(this),
-    btnOffset = $buttonElement.offset(),
-    xPos = e.pageX - btnOffset.left,
-    yPos = e.pageY - btnOffset.top,
-    size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5),
-    animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
-
-  $rippleElement
-    .css({
-      top: yPos,
-      left: xPos,
-      width: size,
-      height: size,
-
-      backgroundColor: $buttonElement.data("ripple-color")
-    })
-    .appendTo($buttonElement)
-    .animate({
-      width: animateSize,
-      height: animateSize,
-      opacity: 0
-    }, 700, function() {
-      $(this).remove();
+    $(document).on('click', '.ripple', function (e) {
+      var $rippleElement = $('<span class="ripple-effect" />')
+        , $buttonElement = $(this)
+        , btnOffset = $buttonElement.offset()
+        , xPos = e.pageX - btnOffset.left
+        , yPos = e.pageY - btnOffset.top
+        , size = parseInt(Math.min($buttonElement.height(), $buttonElement.width()) * 0.5)
+        , animateSize = parseInt(Math.max($buttonElement.width(), $buttonElement.height()) * Math.PI);
+      $rippleElement.css({
+        top: yPos
+        , left: xPos
+        , width: size
+        , height: size
+        , backgroundColor: $buttonElement.data("ripple-color")
+      }).appendTo($buttonElement).animate({
+        width: animateSize
+        , height: animateSize
+        , opacity: 0
+      }, 700, function () {
+        $(this).remove();
+      });
     });
-});
   </script>
 </body>
 
