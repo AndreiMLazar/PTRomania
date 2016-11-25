@@ -252,6 +252,7 @@ hr {
   -webkit-overflow-scrolling: touch;
   right: 0;
   top: 0;
+  margin-top:10px;
   height: 100%;
   width: 50px;
   background-color: rgba(37, 37, 37, 0.8);
@@ -803,13 +804,21 @@ a.slide_btn {
 .dbexp img {
   position: absolute;
   -webkit-overflow-scrolling: touch;
-  max-width: 21%;
+  max-width: 22%;
   right: 0;
   bottom: 0;
   float: right;
   z-index: 3;
   opacity: 0.6;
   filter: alpha(opacity=80);
+  max-height: 100vh;
+}
+
+@media only screen and (min-width:1600)
+{
+  .dbexp img {
+    max-width: 25%;
+  }
 }
 
 .intro {
@@ -977,7 +986,8 @@ a.slide_btn {
 
 .packs {
   height: 100vh;
-  overflow: hidden
+  overflow: hidden;
+  overflow-y: hidden
 }
 
 .parallax {
@@ -1184,8 +1194,8 @@ ul.footer li.tw a {
   flex-wrap: wrap;
   align-content: center;
   width: 100%;
-  margin-top: 8%;
-  margin-bottom: 10vh;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .list .item {
@@ -1233,7 +1243,7 @@ ul.footer li.tw a {
   text-align: center;
   margin-left: 30%;
   margin-top: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .list h1 {
@@ -1247,69 +1257,19 @@ ul.footer li.tw a {
   color: #d7d7d4;
   font-family: moon-light;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 24px;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 500px) {
   .item hr {
-    margin-bottom: 30px;
-  }
-  .list .item {
-    height: 60vh;
-    max-height: 60vh;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .item hr {
-    margin-bottom: 50px;
-  }
-  .list .item {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .list h1 {
-    font-size: 32px;
-  }
-  .item h2 {
-    font-size: 18px;
-    line-height: 26px;
     margin-bottom: 60px;
   }
-}
-
-@media screen and (max-width: 860px) {
-  .item hr {
-    margin-bottom: 30px;
-  }
   .list .item {
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 50vh;
-    max-height: 50vh;
-  }
-  .list h1 {
-    font-size: 32px;
-  }
-  .item h2 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .item hr {
-    margin-bottom: 20px;
-  }
-  .list .item {
-    height: 54vh;
-    max-height: 54vh;
+    height: 66vh;
+    max-height: 70vh;
     margin-left: 0%;
     margin-right: 0%;
-    margin-top: 10px;
+    margin-top: 40px;
   }
   .list h1 {
     font-size: 32px;
@@ -1318,6 +1278,36 @@ ul.footer li.tw a {
     line-height: 26px;
   }
 }
+
+
+@media screen and (max-width: 360px) {
+  .list .item {
+    height: 80vh;
+    max-height: 80vh;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 40px;
+  }
+}
+
+.special {
+  margin-top: 72px !important;
+}
+
+@media screen and (max-width: 1523px)
+{
+  .special {
+    margin-top: 92px !important;
+  }
+}
+
+@media screen and (max-width: 1392px)
+{
+  .special {
+    margin-top: 48px !important;
+  }
+}
+
 
 .ripple {
   overflow: hidden;
@@ -1740,26 +1730,26 @@ a:hover img {
 
 @-webkit-keyframes fade-in {
   0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
     opacity: 1;
   }
 }
 
 @keyframes fade-in {
   0% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
     opacity: 1;
   }
 }
@@ -1824,24 +1814,6 @@ a:hover img {
   transform: rotate(-45deg);
 }
 
-.close.big {
-  -webkit-transform: scale(3);
-  -moz-transform: scale(3);
-  -ms-transform: scale(3);
-  -o-transform: scale(3);
-  transform: scale(3);
-}
-
-.close.hairline::before,
-.close.hairline::after {
-  height: 1px;
-}
-
-.close.warp::before,
-.close.warp::after {
-  border-radius: 120% 0;
-}
-
 .close.fat::before,
 .close.fat::after {
   border-radius: 100%;
@@ -1849,4 +1821,18 @@ a:hover img {
 
 #opt-in {
   display: none;
+}
+
+.opt {
+  width: 300px;
+  z-index: 4;
+}
+
+.opt span {
+  font-size: 24px;
+}
+
+.tick:before {
+  content: "\2713";
+  color: #bf9649;
 }
