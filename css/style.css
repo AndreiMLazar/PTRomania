@@ -196,8 +196,8 @@ hr {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   left: .875em;
-  max-height: 50px;
-  max-width: 220px;
+  width: 200px;
+  height: auto;
 }
 
 .cd-logo img {
@@ -207,7 +207,6 @@ hr {
 
 .cd-logo img:hover {
   display: block;
-  background-image: url(../img/logohover.png);
 }
 
 @media only screen and (min-width: 768px) {
@@ -632,7 +631,7 @@ hr {
 }
 
 .slide:nth-of-type(1) {
-  background-image: url(../gal/3.jpg);
+  background-image: url(../img/POZA1-min.jpg);
   width: 100%;
   background-position: top;
   background-size: cover;
@@ -640,7 +639,7 @@ hr {
 }
 
 .slide:nth-of-type(2) {
-  background-image: url(../gal/2.jpg);
+  background-image: url(../img/POZA2-min.jpg);
   width: 100%;
   background-position: top;
   background-size: cover;
@@ -648,7 +647,7 @@ hr {
 }
 
 .slide:nth-of-type(3) {
-  background-image: url(../gal/4.jpg);
+  background-image: url(../img/3.jpg);
   width: 100%;
   background-position: top;
   background-size: cover;
@@ -1506,6 +1505,25 @@ a:hover img {
 
 #photo-gallery {
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    top: 2%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1330px) {
+  #overlay img {
+    top: 3%;
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  #overlay img {
+    top: 4%;
+    width: 55%;
+  }
 }
 
 @media screen and (max-width: 600px) {
