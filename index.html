@@ -15,12 +15,12 @@
   <meta name="keywords" content="personal training romania, personal training, training, trainer, fitness, sport, athelette, gym" />
   <meta name="Resource-type" content="Document" />
   <meta name="robots" content="index,follow" />
-  <meta property="og:image" content="img/favicon.png" />
+  <meta property="og:image" content="img/favicon.ico" />
   <meta property="og:url" content="http://www.ptromania.ro" />
   <meta property="og:title" content="Personal Training Romania" />
   <title>Bogdan Craciun Fitness</title>
-  <link rel="apple-touch-icon" href="img/favicon.png" />
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/favicon.ico" />
+  <link rel="icon" type="image/png" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/preloader.css" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/grid.css" />
@@ -80,7 +80,13 @@
     <div class="slider">
       <div class="slide_viewer">
         <div class="slide_group">
-          <div class="slide"> </div>
+          <div class="slide">
+            <div class="slider-text">
+              <h4>Construieste<br> un corp</h4>
+              <h3>FIT</h3>
+            <div class="slider-slogan">
+              <h5>Personal Training Romania<br> te invata totul despre<br> <strong><em>NUTRITIE si ANTRENAMENT</em></strong></h5> </div></div>
+          </div>
           <div class="slide"> </div>
           <div class="slide"> </div>
         </div>
@@ -277,19 +283,22 @@ filter: none;
   <script src="js/menu.min.js"></script>
   <script src="js/arrow.js"></script>
   <script type="text/javascript">
-  // ************** Scroll Logo/ Text Shrink **************
-
-$(document).ready(function(){
-     var $logo = $('.cd-logo'); 
-    $(window).scroll(function(){ // on scroll of window
-       if($(this).scrollTop() > 0) { // if window scroll position is greater than 0
-            $logo.stop().animate({ maxWidth : '80px' }); // get logo, stop, and animate font size
-       } else if($(this).scrollTop() < 10){ // if window scroll position is less than 10
-            $logo.stop().animate({ maxWidth : '200px' }); // get logo, stop, and animate font size
-       }
+    // ************** Scroll Logo/ Text Shrink **************
+    $(document).ready(function () {
+      var $logo = $('.cd-logo');
+      $(window).scroll(function () { // on scroll of window
+        if ($(this).scrollTop() > 0) { // if window scroll position is greater than 0
+          $logo.stop().animate({
+            maxWidth: '80px'
+          }); // get logo, stop, and animate font size
+        }
+        else if ($(this).scrollTop() < 10) { // if window scroll position is less than 10
+          $logo.stop().animate({
+            maxWidth: '200px'
+          }); // get logo, stop, and animate font size
+        }
+      });
     });
-    
-});
   </script>
   <script type="text/javascript">
     var $overlay = $('<div id="overlay"></div>');
