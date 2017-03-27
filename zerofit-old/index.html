@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>De la ZERO la FIT</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="css/one-page-wonder.css" rel="stylesheet" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- Navigation -->
+  <!-- Full Width Image Header -->
+</head>
+
+<body style="background-color: #eaeaea !important;">
+  <style>
+    .close {
+      cursor: pointer;
+      color: #000;
+      height: 40px;
+      line-height: 30px;
+      position: absolute;
+      right: 10px;
+      text-align: center;
+      text-decoration: none;
+      top: 10px;
+      width: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+    
+    .close:hover {
+      color: #000;
+    }
+    
+    .modal-container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      transition: 0.2s all;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Moon-Light, sans-serif, helvetica neue;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    
+    .modal-container.hidden {
+      opacity: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .modal-container .modal-wrapper {
+      position: relative;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      overflow-y: auto;
+      max-height: 90vh;
+      background: #bf9649;
+      padding: 1em 3em;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .modal-container .modal-wrapper .modal-close {
+      position: absolute;
+      cursor: pointer;
+      top: 0.1rem;
+      right: 0.6rem;
+      font-size: 4rem;
+      color: #d7d7d7;
+    }
+    
+    .modal-container .modal-wrapper .modal-close:hover {
+      color: #eaeaea;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    button {
+      -webkit-appearance: none;
+      border: 0;
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 1rem 2rem;
+      border-radius: 2px;
+      background: #f6db93;
+      transition: 0.2s all;
+      margin: 2vh;
+      margin-left: 6%;
+    }
+    
+    button:hover {
+      background: #f7f7f7;
+      box-shadow: 0px 0.2rem 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    button:active {
+      background: #f7f7f7;
+      box-shadow: 0px 0.1rem 6px rgba(0, 0, 0, 0.15);
+    }
+    
+    button:focus {
+      outline: 0;
+    }
+    
+    #opt-in {
+      display: none;
+    }
+    .space {
+      height: 80px;
+    }
+    gri {
+      background-color: #252525 !important;
+    }
+    gri2 {
+      background-color: #444 !important;
+    }
+    alb {
+      background-color: #ddd !important;
+    }
+  </style>
+  <div class="modal-container" id="opt-in">
+    <div class="modal-wrapper">
+      <h2 style="font-size: 1.3em; text-transform: uppercase; color:#d7d7d7; margin-top: 10px;">20 de pagini gratis</h2> <span class="modal-close modal-button">×</span>
+      <br>
+      <p style="color:#444;">Din programul
+        <br>
+        <br><strong>De la ZERO la FIT</strong></p>
+      <br>
+      <a href="ZERO-FIT-GRATIS.zip">
+        <button class="modal-button" style="color:#444;">Download</button>
+      </a>
+    </div>
+  </div>
+  <header class="header-image">
+    <div class="headline">
+      <div class="container">
+        <p style="color: #fff !important; z-index:4; font-size:72px;">De la ZERO la FIT</p>
+        <h2>Ghidul pas cu pas pentru a avea un corp FIT si a te simti EXCELENT in acest timp</h2>
+        <br />
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZSYLRCEBWC3G6">
+          <button class="button" style="vertical-align:middle"><span>VREAU ACUM</span></button>
+      </div>
+      </a>
+    </div>
+  </header>
+  <div class="container alb" style="background-color:#eaeaea;">
+   <div class="space"></div>
+    <!-- First Featurette -->
+    <div class="featurette" id="about">
+      <p align="center">
+        <script src="countdown.js" type="text/javascript"></script>
+        <script type="application/javascript">
+          var myCountdownTest = new Countdown({
+            year: 2016
+            , month: 12
+            , day: 16
+            , hour: 16
+            , width: 1080
+            , height: 150
+            , rangeHi: "hour"
+            , labelText: {
+              second: "Secunde"
+              , minute: "Minute"
+              , hour: "Ore"
+            , }
+          , });
+        </script>
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hrJ6ACqR2LE" frameborder="0" allowfullscreen></iframe>&nbsp; &nbsp;
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VGORnh_Vyqo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br />
+    <br />
+    <br /> &nbsp;
+    <header class="redred">
+      <div class="redline">
+        <br>
+        <p style="color:#f7f7f7;font-size:60px;font-weight:bold">&nbsp; CE INSEAMNA UN CORP FIT? </p>
+      </div>
+      <br> </div>
+  </header>
+  <!-- Second Featurette -->
+  <div id="wrapper" style="background:#252525;display:flex">
+    <div id="content" style="background:#252525">
+      <p class="gender" style="color:#f7f7f7">Pentru barbati</p> &nbsp;
+      <ul align="left" class="star">
+        <li style="font-size:18px;color:#f7f7f7">Inseamna sa ai o masa musculara dezvoltata si un procent mic de grasime.</li>
+        <li style="font-size:18px;color:#f7f7f7">Inseamna sa ai acea forma perfecta de V. O talie mica cu umeri lati si impunatori. Pieptul taiat pe mijloc si un abdomen perfect definit.</li>
+        <li style="font-size:18px;color:#f7f7f7">Inseamna un corp sanatos si placut vizual. Tipul actorilor din filme, modelelor de fitness. Genul de imagine ce intoarce privirile.</li>
+        <li style="font-size:18px;color:#f7f7f7">Inseamna sa te simti extraordinar inauntru si in afara. Inseamna sa te simti bine mental si fizic.</li>
+        <li style="font-size:18px;color:#f7f7f7">Inseamna sa te bucuri de toate avantajele unui corp FIT! Sa te bucuri de toate evenimentele sociale.</li>
+        <li style="font-size:18px;color:#f7f7f7">Sa iesi in oras cu prietenii, sa mergi la petreceri, sa te bucuri de evenimente sociale, sa iei masa cu persoanele apropiate tie, sa petreceri timp de calitate cu fete si sa ai intalniri extraordinare.</li>
+      </ul>
+      <p align="center" style="font-size:18px;padding-right:30px;color:#f7f7f7">In acest program NU VREAU sa renunti la toate aceste lucruri. Vreau sa te bucuri de ele. Care mai este tot scopul unui corp atragator daca nu te poti bucura de avantajele ce vin odata cu el?
+        <br />
+        <br /> Cand vei invata ODATA pentru totdeauna care sunt SINGURELE PRINCIPII pe care se bazeaza nutritia si antrenamentul, atunci vei stii exact ce ai de facut si nu va trebui sa renunti la nimic important tie pentru asta.</p>
+    </div>
+    <div id="sidebar" style="background:#252525">
+      <p class="gender" style="color:#f7f7f7">Pentru femei</p> &nbsp;
+      <ul align="left" class="star">
+        <li style="font-size:18px;color:#f7f7f7">Inseamna sa adaugi masa musculara dar intr-un mod in care iti pastrezi feminitatea,arati sexy si sanatos.</li>
+        <li style="font-size:18px;color:#f7f7f7">Personal trainerii si nutritionistii ar trebui sa asculte mai mult femeile.</li>
+        <li style="font-size:18px;color:#f7f7f7">Ele vor sa aiba picioarele subtiri dar FIT. Sa aiba un fund rotund si ridicat. Nu unul ce nu incape in pantaloni sau opusul, un fund lasat.</li>
+        <li style="font-size:18px;color:#f7f7f7">Vor sa aiba acel look feminin cu brate subtiri si talie ingusta, dar cu forme de invidiat.</li>
+        <li style="font-size:18px;color:#f7f7f7">Asta inseamna sa ai o masa musculara armonios dezvoltata si un procent cat mai mic de grasime pentru a arata tonusul muscular.</li>
+        <li style="font-size:18px;color:#f7f7f7">Majoritatea dintre voi oricum mananca foarte putin. Nu ai nevoie de clasicul sfat &rdquo;mananca 6 mese pe zi&rdquo;.</li>
+        <li style="font-size:18px;color:#f7f7f7">Ai nevoie sa iti structurezi mesele pe placul tau si sa ramai cu ciocolatica dupa care tanjesti atat de mult.</li>
+      </ul>
+      <p align="center" style="font-size:18px;color:#f7f7f7">Asta vei invata impreuna cu Personal Training Romania.
+        <br />
+        <br /> Odata ce ai invatat bazele NUTRITIEI si ale ANTRENAMENTULUI nu vei mai avea nevoie sa stai pe ganduri ce cand cum sa mananci si cum sa te antrenezi pentru a arata extraordinar.
+        <br />
+        <br /> Si va fi o calatorie placuta si mentenabila.</p>
+    </div>
+  </div>
+  </div>
+  <hr class="featurette-divider" />
+  <!-- Third Featurette -->
+  <div class="3rd" style="background-color:#eaeaea;">
+   <div style="height:40px;"></div>
+  <p class="gender alb">Vei regasi in program</p>
+  <div style="height:40px;"></div>
+  <ul align="left" class="bifa">
+    <li style="font-size:25px;">Tot ceea ce ai nevoie pentru a creste in masa musculara in cel mai scurt timp.</li>
+    <li style="font-size:25px;">Tot ceea ce ai nevoie daca vrei sa slabesti o cantitate mare de grasime in cel mai scurt timp si sa te mentii toata viata.</li>
+    <li style="font-size:25px;">Nutritia si antrenamentul bazate pe ultimele realizari stiintifice si scrise intr un mod usor de inteles pentru oricine isi doreste un corp estetic</li>
+    <li style="font-size:25px;">Partea mentala si strategiile psihologice. Aceasta este partea cea mai neglijata din procesul spre un corp FIT</li>
+  </ul>
+    <div style="height:40px;"></div>
+  </div>
+
+  <div class="gri2" style="font-size:0px; background-color:#444;">
+    <p align="left" style="font-size:18px;font-weight: bold;color:#f7f7f7;box-sizing:border-box;padding-left:100px;background-color:#444">
+      <br /> Asta vei invata impreuna cu Personal Training Romania.
+      <br />
+      <br /> Toate sunt explicate cu lux de amanunte datorita ultimelor studii stintifice si experientei proprii a echipei. Vei invata cum sa faci aceasta calatorie una placuta si sa beneficiezi de rezultate maxime.
+      <br />
+      <br /> Vei Invata odata pentru totdeauna sa arati extraordinar fizic si sa te simti excelent in tot acest timp.
+      <br />
+      <br /> Este structurata toata stiinta din spatele NUTRITIEI si ANTRENAMENTULUI impreuna cu experienta noastra de peste 5 ani.
+      <br />
+      <br /> Suntem inspirati de nenumaratele transformari nu numai fizice, ci si de viata a oamenilor ce au terminat programul.
+      <br />
+      <br /> Totul este sintetizat simplu si pas cu pas pentru a incepe imediat programul si a te ajuta pentru intreaga viata.
+      <br />
+      <br /> Pur si simplu aplici ceea ce iti spune programul si vei avea rezultate.</p>
+  </div>
+  <hr class="featurette-divider" />
+  <div id="wrapper" style="display:flex; background-color: #eaeaea;">
+    <div id="content">
+      <ul align="left" class="dot">
+        <br />
+        <br />
+        <br /> &nbsp;
+        <li style="font-size:18px;">Iti doresti sa fii sanatos si FIT dar nu te poti apuca pentru ca nu ai timp?</li>
+        <li style="font-size:18px;">Ai vrea sa te apuci dar nu vrei sa mananci numai salata toata ziua?</li>
+        <li style="font-size:18px;">Vrei sa fii sanatos dar in acelasi timp sa simti ca traiesti viata?</li>
+        <li style="font-size:18px;">Vrei sa nu ai nevoie sa urmezi o dieta rigida la care trebuie sa te gandesti toata ziua?</li>
+        <li style="font-size:18px;">Chiar daca doresti sa incepi, te incurca foarte mult ca nu stii ce dieta sa urmezi? Ce sfat sa aplici? Ce sa mananci? Cand sa mananci? Cand sa te antrenezi? Cum sa te antenezi? Ai nevoie de cardio?Cand, cum, unde?</li>
+        <br />
+        <br />
+        <br /> &nbsp; </ul>
+    </div>
+    <div id="sidebar">
+      <ul align="left" class="dot">
+        <br />
+        <br />
+        <br /> &nbsp;
+        <li style="font-size:18px;">Vrei sa ai un procent cu adevarat scazut de grasime? Sau vrei sa cresti maximal in masa musculara?</li>
+        <li style="font-size:18px;">Te poti tine o saptamana sau doua de diferite diete dar apoi renunti?</li>
+        <li style="font-size:18px;">Esti ocupat, fie cu scoala, fie cu facultatea, fie cu locul de munca si vrei sa iti remodelezi corpul natural si simplu?</li>
+        <li style="font-size:18px;">Ai auzit de suplimente alimentare precum: Proteina din zer, creatina, aminoacizi, carnitina etc? Vrei sa stii daca functioneaza si daca ai nevoie de ele sau nu?</li>
+        <br />
+        <br />
+        <br /> &nbsp; </ul>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="gri" style="background:#252525">
+    <p align="center" style="font-size:25px;font-weight: bold;color:#f7f7f7;">
+      <br /> Stim cu adevarat cum te simti si exact aceste intrebari ni le-am pus si noi la inceput si apoi toti cei ce au urmat programul.</p>
+    <p align="left" style="font-size:18px;color:#f7f7f7;padding-left:100px;padding-right:60px">
+      <br /> Tocmai de aceea am comprimat <font color="#A2A1A1" size="5"><b>BAZELE NUTRITIEI</b></font> si <font color="#A2A1A1" size="5"><b>ANTRENAMENTULUI</b></font> in cel mai simplu mod, intr-un program de urmat pas cu pas ce iti va permite libertatea sa te ocupi de ceea ce este important pentru tine si sa ai cele mai bune rezultate!
+      <br />
+      <br /> Marile site-uri de fitness si companii de suplimente vor sa fii confuz , deoarece o sa pierzi foarte mult timp , automat si foarte multi bani , in atingerea scopului tau .
+      <br />
+      <br /> Spre exemplu , daca tot ce ai nevoie ar fi pe site-ul respectiv sau in suplimentul respectiv , ce ar mai putea sa iti vanda dupa aceea?
+      <br />
+      <br /> Din dorinta de a nu mai fi nimeni in situatia in care am fost pusi noi si clientii nostri a luat nastere Personal Training Romania.
+      <br />
+      <br /> Eu personal m-am dat peste cap cu programe peste programe care nu au dus la nici un rezultat in 2 ani de zile.
+      <br />
+      <br /> Totusi tu nu ai nevoie sa faci asta. In programul de la <font color="#A2A1A1" size="5"><b>ZERO la FIT</b></font> este totul pus pe tava , toate solutiile catre un corp exact cum ti-l doresti , intr un mod cat mai simplu.
+      <br />
+      <br /> De ce sa cheltuiesti pana la 1000 de ron pe luna pentru niste suplimente despre care nici nu stii daca iti vor oferi rezultate.
+      <br />
+      <br /> Suplimentele iti pot oferi 5 pana la <font color="#A2A1A1" size="5"><b>MAXIM</b></font> 10% din rezultate. Peste 80% din rezultate sunt doar concentrandu-ne asupra bazelor <font color="#A2A1A1" size="5"><b>NUTRITIEI SI ANTRENAMENTULUI.</b></font>
+      <br />
+      <br /> &nbsp;</p>
+  </div>
+  <div style="background-color:#eaeaea;">
+  <div style="width:1024px; margin:auto;">
+      <script src="countdown.js" type="text/javascript"></script>
+      <script type="application/javascript">
+        var myCountdownTest = new Countdown({
+          // I'm cheating here... so I don't have to update this every year!
+          // year : 2042, // <-- This is a better example of what to use.
+          year: 2016
+          , month: 12
+          , day: 16
+          , hour: 16
+          , width: 1080
+          , height: 200
+          , rangeHi: "hour"
+          , labelText: {
+            second: "Secunde"
+            , minute: "Minute"
+            , hour: "Ore"
+          , }
+        , });
+      </script>
+  </div>
+  </div>
+  <div class="x-section" id="x-section-29" style="margin: 0px;padding: 45px 350px; background-color: #252525;display:flex">
+    <div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+      <div class="x-column x-sm x-1-1" style="padding: 0px; background-color:#252525;">
+        <div class="x-pricing-table cf dpdcart three-columns">
+          <div class="x-pricing-column dpdcart iframe"  style="background-color: #eee;-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);">
+            <h2 class="man">Program nutritie</h2>
+            <div class="x-pricing-column-info">
+              <h3 class="x-price"><strike>139 lei</strike><br />
+97 lei</h3>
+              <ul class="x-ul-icons">
+                <li class="x-li-icon">Program nutritie</li>
+                <li class="x-li-icon"><del>Program antrenament</del></li>
+                <li class="x-li-icon"><del>5 BONUSURI</del></li>
+              </ul>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VH6LQV5EBBENN">
+                <button class="button3" style="vertical-align:middle"><span>VREAU ACUM</span></button>
+              </a>
+            </div>
+          </div>
+          <div class="x-pricing-column dpdcart iframe featured" style="background-color: #eee;-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);">
+            <h2 class="man">Programul COMPLET <span class="x-featured-sub">de la ZERO la FIT</span></h2>
+            <div class="x-pricing-column-info">
+              <h3 class="x-price"><strike>279 lei</strike><br />
+177 lei</h3>
+              <ul class="x-ul-icons">
+                <li class="x-li-icon">Program nutritie</li>
+                <li class="x-li-icon">Program antrenament</li>
+                <li class="x-li-icon">5 BONUSURI</li>
+              </ul>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZSYLRCEBWC3G6">
+                <button class="button3" style="vertical-align:middle"><span>VREAU ACUM</span></button>
+              </a>
+            </div>
+          </div>
+          <div class="x-pricing-column dpdcart iframe"  style="background-color: #eee;-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);">
+            <h2 class="man">Program antrenament</h2>
+            <div class="x-pricing-column-info">
+              <h3 class="x-price"><strike>139 lei</strike><br />
+97 lei</h3>
+              <ul class="x-ul-icons">
+                <li class="x-li-icon"><del>Program nutritie</del></li>
+                <li class="x-li-icon">Program antrenament</li>
+                <li class="x-li-icon"><del>5 BONUSURI</del></li>
+              </ul>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PGZJCGVTWQ926">
+                <button class="button3" style="vertical-align:middle"><span>VREAU ACUM</span></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: block; margin: 0 auto;"></div>
+  <div class="gri">
+    <p align="center"><img src="css/money.png" /></p>
+    <p align="center" style="font-size:25px;font-weight: bold;padding-left:120px">100% Fara risc.Daca nu esti multumit ai posibilitatea in 30 de zile sa primesti banii inapoi.</p>
+    <div style="height: 20px;"></div>
+  </div>
+  <div>
+   <div style="height: 20px;"></div>
+    <p class="gender" style="font-size:35px">Intrebari frecvente:</p>
+    <p align="left" style="font-size:30px;padding-left:60  px"><img src="css/numarul1.png" style="padding-left:60px" /> Pentru cine este mai exact aceasta carte?</p>
+    <p align="left" style="font-size:18px;padding-left:100px;color:#444">- Pentru tanarul slab care nu poata sa puna pe el
+      <br /> - Pentru oricine isi doreste sa scape rapid si placut de kilogramele in plus
+      <br /> - Pentru oricine nu are timpul necesar si nici nu vrea sa urmeze diete stricte
+      <br /> - Pentru cineva entuziasmat de fitness ce isi doreste cu adevarat cele mai bune rezultate
+      <br /> - Pentru oricine isi doreste sa aiba o intelegere completa si pentru INTREAGA viata asupra modului in care iti poti remodela corpul
+      <br /> - Pentru cine isi doreste sa o faca placut fara macar sa se gandeasca la acest lucru
+      <br /> - Pentru cine isi doreste cu adevarat sa afle secretele din spatele rezultatelor si s a saturat de sfaturi si diete &ldquo;minune&rdquo; ce nu au nici macar un efect</p>
+  </div>
+  <p></p>
+  <div>
+    <p align="left" style="font-size:30px;padding-left:60  px"><img src="css/numarul2.png" style="padding-left:60px" /> Cand incepe si cand se termina acest program?</p>
+    <p align="left" style="font-size:18px;padding-left:100px;color:#444">-Acest program incepe acum si nu se termina niciodata. Vei stii exact ce sa faci pentru a ajunge si a te mentine FIT pentru intreaga viata.</p>
+  </div>
+  <p></p>
+  <p></p>
+  <div>
+    <p align="left" style="font-size:30px;padding-left:60  px"><img src="css/numarul3.png" style="padding-left:60px" /> Daca nu sunt fericit in legatura cu programul?</p>
+    <p align="left" style="font-size:18px;padding-left:100px;color:#444">-Tot ceea ce ne dorim este ca tu sa fii fericit. De asta am si creeat programul.
+      <br /> -La asta suntem cei mai buni si vrem sa impartasim cu toata lumea absolut tot ceea ce ai nevoie pentru a iti rezolva problemele cu aspectul corporal odata pentru totdeauna cum am facut-o si noi.
+      <br /> -Suntem atat de increzatori in rezultatele pe care le vei avea incat iti oferim GARANTIA 100% de a primi banii inapoi in 30 de zile dupa achizitionare. Ai posibilitatea sa ceri oricand acesti bani inapoi!</p>
+  </div>
+  <p></p>
+  <p></p>
+  <div>
+    <p align="left" style="font-size:30px;padding-left:60  px"><img src="css/numarul4.png" style="padding-left:60px" />Sunt aceste carti bune pentru incepatori? Dar pentru oameni ce nu au mai facut sport?</p>
+    <p align="left" style="font-size:18px;padding-left:100px;color:#444">-Cu siguranta! Aceste carti te vor pune in fata a 99% din populatia interesata de fitness si nutritive! Te vor scuti de zeci sau poate sute de ore de citit si aplicat sfaturi nefondate de la prieteni sau &ldquo;experti&rdquo; in domeniu.</p>
+  </div>
+<div style="height: 30px;"></div>
+  <div class="gri" style="display:block">&nbsp;
+   <div style="height: 10px;"></div>
+    <p align="left" style="font-size:30px;padding-left:29%;font-weight: bold;">Cati bani valoreaza acest curs?</p> &nbsp;
+    <p align="left" style="font-size:26px;padding-left:24%;color:#f7f7f7;">Cu acest program iti garantam ca nu vei avea nevoie vreodata de</p> &nbsp;
+    <ul style="padding-left:26%">
+      <li style="font-size:18px;color:#f7f7f7;">Antrenor personal (400-1000 RON pe luna)</li>
+      <li style="font-size:18px;color:#f7f7f7;">Vizita la nutritionist ( 500-1500 Ron, plus consultatii saptamanale)</li>
+      <li style="font-size:18px;color:#f7f7f7;">Suplimente alimentare( intre 200-1000 de ron PE LUNA, fara macar sa stii daca au si ce efect au aceste suplimente)</li>
+      <li style="font-size:18px;color:#f7f7f7;">Sa citesti sfaturi despre nutritie si antrenament si sa discerni intre ce functioneaza si ce nu
+        <br /> (Probabil sute de ore de cercetat informatii nefondate de pe internet si alte sute de ore pentru aplicarea lor)</li>
+    </ul> &nbsp;
+    <p align="left" style="font-size:25px;padding-left:17%;display: inline-block;font-weight: bold;color:#f7f7f7;">Toate acestea ar valora de la 1200 de ron pe luna pana la 3000 ron. Unde peste 500 de ron ar fi platiti lunar.
+      <br /> Iti garantez ca vei avea acces la toate aceste lucuri plus multe altele in acest program PE VIATA.</p>
+      <div style="height: 30px;"></div>
+  </div>
+  <div class="negru">
+    <p align="center" class="gender2" style="color:#f7f7f7;font-size:40px">Ce poti cumpara cu 197 de RON?</p> &nbsp;
+    <p align="left" style="font-size:20px;padding-left:110px;color:#f7f7f7;padding-left:27%">-Cateva iesiri in oras sau o iesire in club mai scumpa.
+      <br /> -Tigari pe o perioada de probabil maxim doua saptamani.
+      <br /> -O pereche de adidasi sau un accesoriu nou.
+      <br /> -Cateva mese in oras&hellip;</p> &nbsp;
+    <p align="center" style="font-size:25px;font-weight: bold;padding-left:0px;color:#f7f7f7;padding-right:50px"><img src="css/icon.png" style="padding-left:60px" />DE CE OFERIM TOATE ACESTEA LA ACEST PRET?<img src="css/icon.png" /></p>
+    <p align="left" style="font-size:18px;color:#f7f7f7;padding-left:90px">Scopul nostru nu a fost si nu va fi niciodata profitul. Visul si scopul nostru pentru care muncim neincetat este ca in acest an sa SCHIMBAM 10 000 de persoane in cea mai buna versiune a lor. Am pus un pret accesibil tuturor pentru a ajuta un numar cat mai mare de persoane.
+      <br />
+      <br /> O forma fizica si o sanatate extraordinara este necesarul fiecaruia dintre noi si nu ar trebui sa fie pentru nimeni o GREUTATE.
+      <br />
+      <br /> Dupa ce am vazut cat de greu obtin rezultatele oamenii in Romania am hotarat ca este nevoie de o schimbare.
+      <br />
+      <br /> Toata lumea are dreptul la un corp FIT si o viata sociala bogata si fericita.
+      <br />
+      <br /> Ne dorim sa vedem in acest an peste 10 000 de oameni fericiti ce inteleg bazele nutritiei si antrenamentului si se bucura de toate avantajele unei conditii fizice excelente in timp ce se bucura in mod normal de viata.
+      <br />
+      <br /> Pentru ca suntem siguri de program si ne dorim ca TOATA LUMEA sa beneficieze de el, nu numai un numar foarte mic din populatia Romaniei, oferim GARANTIA BANILOR 100%.
+      <br />
+      <br /> Daca pur si simplu nu esti entuziasmat de tot programul si nu ai tot ceea ce ti ai dorit, iti vom returna toti banii inapoi.
+      <br />
+      <br /> Practic, nu ai NIMIC de pierdut si TOTUL de castigat. Asta este ceea ce ne si dorim, sa traim cu totii viata visurilor noastre. Nu doar noi, ci toata lumea.
+      <br />
+      <br /> Nu suntem bogati cu adevarat pana nu sunt toti cei din jurul nostru.
+      <br />
+      <br /> Daca vrei sa faci parte din planul nostru, inscrie-te acum:
+      <br /> &nbsp;</p>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZSYLRCEBWC3G6">
+      <p align="center">
+        <button class="button" style="vertical-align:middle"><span>VREAU ACUM</span></button>
+      </p>
+    </a>
+  </div>
+  <!-- /.container -->
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      setTimeout(function () {
+        document.getElementById('opt-in').style.display = 'flex';
+      }, 10000); // milliseconds
+      $('.modal-close').click(function () {
+        document.getElementById('opt-in').style.display = 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>
